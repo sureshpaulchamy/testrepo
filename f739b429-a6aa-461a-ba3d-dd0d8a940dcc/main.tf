@@ -2,18 +2,8 @@ provider "aws" {
   region = var.region
 }
 
-resource "random_string" "bucket_suffix" {
-  length  = 8
-  special = false
-  upper   = false
-}
-
-locals {
-  timestamp = formatdate("YYYYMMDDhhmmss", timestamp())
-}
-
 resource "aws_s3_bucket" "private_bucket" {
-  bucket = "${var.bucket_prefix}-${local.timestamp}-${random_string.bucket_suffix.result}"
+  bucket = "KiwiCreateBucket2888888"
 }
 
 resource "aws_s3_bucket_public_access_block" "private_bucket_access" {
