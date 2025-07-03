@@ -4,8 +4,8 @@ variable "region" {
   default     = "us-east-1"
 }
 
-variable "bucket_name" {
-  description = "Name of the S3 bucket"
+variable "bucket_prefix" {
+  description = "Prefix for the S3 bucket name"
   type        = string
-  default     = "mytempbucket"
+  default     = "my-unique-bucket"
 }
