@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "new_bucket" {
-  bucket = "unique bucket name 2172919"
+  bucket = "ApplicationUniqueBucket23213123"
 }
 
 resource "aws_s3_bucket_public_access_block" "new_bucket_access" {
